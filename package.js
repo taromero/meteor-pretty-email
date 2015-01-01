@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Send pretty emails (fork:hashbang & coffeescript free!)",
-  version: "0.1.1",
+  version: "0.1.2",
   git: "https://github.com/gliesesoftware/meteor-pretty-email",
   name: "gliese:pretty-email"
 });
