@@ -1,8 +1,8 @@
 Package.describe({
-  summary: "Send pretty emails",
+  summary: "Send pretty emails (fork:hashbang & coffeescript free!)",
   version: "0.0.3",
-  git: "https://github.com/yogiben/meteor-pretty-email",
-  name: "yogiben:pretty-email"
+  git: "https://github.com/gliesesoftware/meteor-pretty-email",
+  name: "gliese:pretty-email"
 });
 
 Package.onUse(function(api) {
