@@ -1,7 +1,8 @@
 Package.describe({
   summary: "Send pretty emails",
   version: "0.0.3",
-  git: "https://github.com/yogiben/meteor-pretty-email"
+  git: "https://github.com/yogiben/meteor-pretty-email",
+  name: "yogiben:pretty-email"
 });
 
 Package.onUse(function(api) {
@@ -15,14 +16,16 @@ Package.onUse(function(api) {
   
   api.addFiles(
     [
-      'lib/server/pretty-emails.coffee',
+      'lib/server/pretty-emails.js',
       'lib/templates/shared/footer.handlebars',
-      'lib/templates/call-to-action.handlebars',
+      'lib/templates/call-to-action.handlebars'
     ], 
     'server');
+  api.export && api.export('PrettyEmail', 'server');
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('yogiben:pretty-emails');
 });
+
