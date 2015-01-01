@@ -1,7 +1,18 @@
-Send pretty emails
+Send pretty emails (fork)
 ==================
+Forked from yogieben:pretty-email, converted to javascript (primarily because I'm not super-coffeescript literate
+but also for the sake of other devs who share my ignorance of CS :P)
 
-`meteor add yogiben:pretty-email`
+Primary change aside from the switch to JS is removing the hashbang that meteor adds to the url in the reset link i.e.
+   before it would look like this:
+     /#/reset-password/:token
+   now it looks like this:
+     /reset-password/:token
+
+The hashbang is there preassumably for appcache reasons ? in any case iron route doesn't support hasbangs and
+while there is currently an option to send a custom url in the email this breaks the built in accounts methods.
+
+`meteor add gliese:pretty-email`
 
 ### What this package does ###
 1. Replaces boring default Meteor emails
