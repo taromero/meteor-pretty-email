@@ -1,22 +1,6 @@
-Send pretty emails (fork)
+Send pretty emails (fork from fork)
 ==================
-Forked from yogieben:pretty-email, converted to javascript (primarily because I'm not super-coffeescript literate
-but also for the sake of other devs who share my ignorance of CS :P)
-
-Primary change aside from the switch to JS is removing the hashbang that meteor adds to the url in the reset link i.e.
-   before it would look like this:
-     /#/reset-password/:token
-   now it looks like this:
-     /reset-password/:token
-
-The hashbang is there preassumably for appcache reasons ? in any case iron route doesn't support hasbangs and
-while there is currently an option to send a custom url in the email this breaks the built in accounts methods.
-
-`meteor add gliese:pretty-email`
-
-### What this package does ###
-1. Replaces boring default Meteor emails
-2. Easily send pretty emails with call to action buttons
+Forked from gliese:pretty-email, to add a couple of improvements that where not accepted as PR till the moment.
 
 ![alt tag](https://raw.githubusercontent.com/yogiben/meteor-pretty-email/master/readme/meteor-pretty-email.png)
 
