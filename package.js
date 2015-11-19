@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Send pretty emails (fork:hashbang & coffeescript free!)",
-  version: "0.1.3",
+  version: "0.1.4",
   git: "https://github.com/taromero/meteor-pretty-email",
   name: "canotto90:pretty-email",
   documentation: null
